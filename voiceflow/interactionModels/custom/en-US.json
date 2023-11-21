@@ -1,0 +1,90 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "PlantWateringIntent",
+          "samples": [
+            "How long does my plant have to live",
+            "Why is my plant dead",
+            "How much longer do I need to wait to kill my plant",
+            "Does the plant watering duty call me",
+            "Is my plant alive",
+            "Do I need to water my plant",
+            "Need to water the plants today",
+            "Plants look dry",
+            "Time to water the garden",
+            "Succulents require watering",
+            "Water the garden now",
+            "Plant soil seems dry",
+            "Should hydrate the flowers today",
+            "Herbs need watering",
+            "Watering necessary for plants",
+            "Ferns require water",
+            "Hydrate houseplants",
+            "Water seedlings today",
+            "Indoor plants thirsty",
+            "Water the vegetable garden",
+            "Potted plants dry",
+            "Soil needs moistening",
+            "Hanging baskets ready for water",
+            "Window box flowers thirsty",
+            "Rose bushes need water",
+            "Irrigate the garden",
+            "Lawn looks parched",
+            "Shrubs ready for watering",
+            "Planters need hydration",
+            "Greenhouse plants thirsty",
+            "Nursery bed seems dry",
+            "Orchids need misting",
+            "Water saplings now",
+            "Ground cover requires water",
+            "Soak the root balls of plants",
+            "Perennials need hydration",
+            "Topsoil dry",
+            "Newly planted trees thirsty",
+            "Climbing vines require watering",
+            "Garden beds ready for water",
+            "Container plants need sprinkling"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "watering plant"
+    }
+  }
+}
