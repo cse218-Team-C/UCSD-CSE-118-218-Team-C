@@ -30,7 +30,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Welcome to Call of Duty 7. What can I help you with?"
+        speak_output = "Welcome to Call of Duty, Garden of War. What can I help you with?"
 
         return (
             handler_input.response_builder
@@ -53,11 +53,11 @@ class HelloWorldIntentHandler(AbstractRequestHandler):
         
         needs_water = json.loads(needs_water_raw.text)
         
-        if needs_water["moisture_level"] == 0:
-            speak_output = "There is currently no call of duty for your plants!"
+        if needs_water["moisture_level"] >= 93:
+            speak_output = "It's time for you to water your plant! Make sure you don't overwater."
             
         else:
-            speak_output = "It's time for a call of duty! Water your plant."
+            speak_output = "Your plant is sufficiently watered!"
         
         # speak_output = "I love call of duty"
 
@@ -96,7 +96,7 @@ class CancelOrStopIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Goodbye!"
+        speak_output = "Goodbye and good luck with your plants!"
 
         return (
             handler_input.response_builder
@@ -113,7 +113,7 @@ class FallbackIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         logger.info("In FallbackIntentHandler")
-        speech = "Hmm, I'm not sure. You can say Hello or Help. What would you like to do?"
+        speech = "Hmm, I'm not sure. Can you repeat your question?"
         reprompt = "I didn't catch that. What can I help you with?"
 
         return handler_input.response_builder.speak(speech).ask(reprompt).response
