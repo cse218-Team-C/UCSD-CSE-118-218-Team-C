@@ -1,8 +1,11 @@
 import smbus
 
-# gets the moisture reading of the connected moisture sensor
 def get_moisture_readings_from_channel () -> int:
-
+    """
+    This function gets the moisture readings from the sensor.
+    It uses the SMBus library to communicate with the I2C device.
+    The value is then returned by the function.
+    """
     address = 0x48
     A0 = 0x40
     bus = smbus.SMBus(1)
